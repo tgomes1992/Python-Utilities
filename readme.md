@@ -6,4 +6,4 @@
 
 ## Flask_sctructure.py
 
-* Arquivo em Python que gera a estrutura básica para projetos em flask
+* Arquivo em Python que gera a estrutura de pastas básica para projetos em flask
