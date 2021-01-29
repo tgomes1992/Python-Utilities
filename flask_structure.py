@@ -1,9 +1,6 @@
 import os
 
-#arquivo para criar projetos em flask 
-
-#zeradosC:\
-#functions
+#arquivo para criar projetos  básicos em flask 
 
 def changedir():
     path = input("Digite o diretório que deseja criar o projeto: ")
