@@ -7,3 +7,9 @@
 ## Flask_sctructure.py
 
 * Arquivo em Python que gera a estrutura de pastas básica para projetos em flask
+
+
+## Flask_sctructure.py
+
+* Arquivo que organiza a pasta em que ele for executado por tipo de arquivo
+
