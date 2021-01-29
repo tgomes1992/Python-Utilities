@@ -9,7 +9,13 @@
 * Arquivo em Python que gera a estrutura de pastas básica para projetos em flask
 
 
-## Flask_sctructure.py
+## Folder Organizer
 
 * Arquivo que organiza a pasta em que ele for executado por tipo de arquivo
+
+## List_folders.py
+
+* Arquivo que gera csv´s dos arquivos presentes em cada pasta
+
+
 
