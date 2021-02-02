@@ -1,28 +1,49 @@
 import os 
 import shutil
 
-
-
-def main():    
+def get_files():
     folder = os.getcwd()
-    file = os.listdir(folder)
-    filetypes = []
-    files = []
-    for i in file:
-        if os.path.isfile(folder + "/"+i):
-            files.append(i)    
-    for i in files:
-        if i.split('.')[-1]  not in filetypes:
-            filetypes.append(i.split('.')[-1])
-    for i in filetypes:
-        os.mkdir(i)
-    for i in files:
-        shutil.move(folder + "/" + i , folder + "/" + i.split(".")[-1] )
-return "DONE"
+    list = os.listdir(folder)
+    file = []
+    for i in list:
+        if os.path.isfile(i):
+            file.append(i)
+    return file
 
+def get_filetypes(list):
+    filetypes = []
+    for i in list:
+        if i.split(".")[-1] not in filetypes:
+            filetypes.append(i.split(".")[-1])
+    return filetypes
+
+def create_folders():
+    folders = get_filetypes(get_files())
+    for i in folders:
+        if os.path.exists(i):
+            pass
+        else:
+            os.mkdir(i)
+    return folders
+
+def movefiles():
+    files = get_files()
+    for i in files:
+        if os.path.exists(i.split(".")[-1]):
+            if os.path.exists(os.path.join(i.split(".")[-1],i)):
+                pass
+            shutil.move(i,i.split(".")[-1])
+    return "files moved"
+
+def main():
+    create_folders()
+    movefiles()
+
+    return "DONE"
 
 
 
 
 if __name__ == "__main__":
     main()
+    
