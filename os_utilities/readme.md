@@ -21,9 +21,9 @@
 * Script que elabora um csv com os arquivos na pasta em que ele for executado
 
 
-### Como Utilizar os Arquivos
+## Como Utilizar os Arquivos
 
-## Faça um clone do repositório no seu computador
-## Certifique-se de que o pytohn esteja  3 ou superior esteja instalado 
-## Execute os arquivos na pasta de acordo a funcionalidade
+### Faça um clone do repositório no seu computador
+### Certifique-se de que o Python 3 ou superior esteja instalado 
+### Execute os arquivos na pasta de acordo a funcionalidade
 
